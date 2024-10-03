@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árak - Hotel Weboldal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            text-align: center; /* Centering text for entire page */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #ff6600;
+            color: #fff;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center; /* Center the nav */
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ffd9b3;
+            color: #333;
+            border-radius: 8px;
+        }
+
+        main {
+            padding: 40px 0;
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem; /* Increased font size for better visibility */
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .arak {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .arak-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Két oszlop */
+            gap: 20px;
+            padding: 0 20px;
+            justify-items: center; /* Középre igazítja a képeket */
+        }
+
+        .arak-item {
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 350px; /* Kép maximális szélessége */
+        }
+
+        .arak-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .arak-description {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .arak-grid {
+                grid-template-columns: 1fr; /* Mobilon a képek egymás alatt jelennek meg */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Hotel Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="rolunk.html">Rólunk</a></li>
+                    <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                    <li><a href="latnivalok.html">Látnivalók</a></li>
+                    <li><a href="galeria.html">Galéria</a></li>
+                    <li><a href="arak.html">Árak</a></li>
+                    <li><a href="ajanlat.html">Ajánlat/Foglalás</a></li>
+                    <li><a href="eljutas.html">Eljutás</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="arak">
+            <h2>Árak</h2>
+            <div class="arak-grid">
+                <div class="arak-item">
+                    <img src="ar1.jpg" alt="Árak 1">
+                </div>
+                <div class="arak-item">
+                    <img src="ar2.jpg" alt="Árak 2">
+                </div>
+            </div>
+            <div class="arak-description">
+                <p>Fedezze fel a legjobb ajánlatainkat!</p>
+                <p>Az árak a svédasztalos reggelit és a szálloda egyéb szolgáltatásainak (parkoló, internet, szauna, sókamra, szezonális külső medence) díját tartalmazzák. Térítés ellenében biztosítunk kerékpárt: 3.000.- Ft/nap (8:00-20:00-ig), részletek a szolgáltatások menüpontban, vagy a recepción.</p>
+                <p>A szállás díja nem tartalmazza az Idegenforgalmi Adót (IFA), mely mértéke: 450.- Ft/fő/éj. A 18 éven aluliak, a miskolci lakosok, továbbá a három- és ennél többgyermekes családok tagjai együttesen IFA mentesek.</p>
+                <p>A szobákat 14:00 órától lehet elfoglalni és 10:00 óráig kell elhagyni. Reggeli 7:00-9:30-ig.</p>
+                <p>Gyermekkedvezmény: A szülőkkel egy szobában tartózkodó gyermek(-eknek) 4 éves korig 100%, 12 éves korig 50% kedvezmény a pótágy árából! Amennyiben egy szülő – egy gyermek, vagy két szülő – két gyermek tartózkodik 1 vagy 2 szobában abban az esetben, az egy fős és a két fős szobaár különbözetéből tudjuk biztosítani a kedvezményt.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel. Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>

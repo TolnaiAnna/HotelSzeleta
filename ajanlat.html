@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajánlat/Foglalás - Hotel Weboldal</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Hotel Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="rolunk.html">Rólunk</a></li>
+                    <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                    <li><a href="latnivalok.html">Látnivalók</a></li>
+                    <li><a href="galeria.html">Galéria</a></li>
+                    <li><a href="arak.html">Árak</a></li>
+                    <li><a href="ajanlat.html">Ajánlat/Foglalás</a></li>
+                    <li><a href="eljutas.html">Eljutás</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="ajanlat">
+            <h2>Ajánlatkérés/Foglalás</h2>
+            <form action="#" method="post">
+                <label for="tipus">Kérjük, válasszon:</label>
+                <select id="tipus" name="tipus" required>
+                    <option value="ajanlatkeres">Ajánlatkérés</option>
+                    <option value="foglalas">Foglalás</option>
+                </select>
+
+                <label for="erkezes">Érkezés dátuma:</label>
+                <input type="date" id="erkezes" name="erkezes" required>
+
+                <label for="tavozas">Távozás dátuma:</label>
+                <input type="date" id="tavozas" name="tavozas" required>
+
+                <label for="nev">Név:</label>
+                <input type="text" id="nev" name="nev" required>
+
+                <label for="cim">Cím:</label>
+                <input type="text" id="cim" name="cim" required>
+
+                <label for="email">Email cím:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefon">Telefonszám:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+
+                <label for="szoba">Szoba típusa:</label>
+                <select id="szoba" name="szoba" required>
+                    <option value="1fo">1 főre</option>
+                    <option value="2fo">2 főre</option>
+                    <option value="lakosztaly">Lakosztály</option>
+                </select>
+
+                <label for="tovabbi_szemelyek">További személyek elhelyezése:</label>
+                <input type="text" id="tovabbi_szemelyek" name="tovabbi_szemelyek" placeholder="Pl. vendégágy, babaágy...">
+
+                <label for="fizetesimod">Fizetési mód:</label>
+                <select id="fizetesimod" name="fizetesimod" required>
+                    <option value="keszpenz">Készpénz</option>
+                    <option value="bankkartya">Bankkártya</option>
+                    <option value="etranszfer">E-transzfer</option>
+                </select>
+
+                <label for="megjegyzes">Megjegyzés:</label>
+                <textarea id="megjegyzes" name="megjegyzes" rows="4" placeholder="Írja ide a megjegyzéseit..."></textarea>
+
+                <button type="submit">Küldés</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel. Minden jog fenntartva.</p>
+    </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            text-align: center; /* Centering text for entire page */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #ff6600;
+            color: #fff;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center; /* Center the nav */
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ffd9b3;
+            color: #333;
+            border-radius: 8px;
+        }
+
+        main {
+            padding: 40px 0;
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem; /* Increased font size for better visibility */
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+
+.ajanlat {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    background: #4b3d29; /* Sötét barna */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #3a2c1e; /* Sötétebb árnyalat */
+}
+
+/* Reszponzív stílus */
+@media (max-width: 768px) {
+    .ajanlat {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px; /* Kisebb gombbetűk mobilon */
+    }
+}
+
+footer {
+    background: #4b3d29; /* Sötét barna */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+    </style>
+</body>
+</html>

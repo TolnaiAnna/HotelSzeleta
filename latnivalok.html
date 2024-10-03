@@ -1,0 +1,205 @@
+    <!DOCTYPE html>
+    <html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Látnivalók - Hotel Weboldal</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="Hotel Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="rolunk.html">Rólunk</a></li>
+                        <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                        <li><a href="latnivalok.html">Látnivalók</a></li>
+                        <li><a href="galeria.html">Galéria</a></li>
+                        <li><a href="arak.html">Árak</a></li>
+                        <li><a href="ajanlat.html">Ajánlat/Foglalás</a></li>
+                        <li><a href="eljutas.html">Eljutás</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="latnivalok">
+                <h2>Látnivalók a közelben</h2>
+                <p>Fedezze fel a környék legjobb látnivalóit és programjait, amelyek csak egy karnyújtásnyira találhatók a szállodától.</p>
+                    <div class="latnivalo">
+                        <img src="szallodakozel.png" alt="Látnivaló 1">
+                        <h3>Látnivalók, programok a szálloda közelében:</h3>
+                        <p>Hámori Mászópark, Kohászati Múzeum, Szeleta-Barlang, Miskolci Állatkert, Diósgyőri vár és várfürdő, lillafüredi pisztrángos, újmassai őskohó, szentléleki pálos kolostorrom, Bánkút Síklub.</p>
+                    </div>
+                    <div class="latnivalo">
+                        
+                    </div>
+                        <img src="szallodakozel2.png" alt="Látnivaló 1">
+                        <h3>Látnivalók, programok Lillafüreden (1 km):</h3>
+                        <p>Hámori tó, Palota szálló, Szinva-patak vízesés, Anna-mésztufabarlang, Szent Isván-cseppkőbarlang, erdei kisvonat.</p>
+                    </div>
+
+                    <div class="latnivalo"></div>
+                        <img src="szallodakozel3.png" alt="Látnivaló 1">
+                        <h3>Látnivalók, programok Miskolc-Tapolcán (17 km):</h3>
+                        <p>Barlangfürdő ( termálfürdő ),  bobpálya, kalandtúrapark, csónakázó tó és park</p>
+                    </div>
+
+
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Hotel. Minden jog fenntartva.</p>
+        </footer>
+
+        <style> 
+  *  {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            text-align: center; /* Centering text for entire page */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #ff6600;
+            color: #fff;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center; /* Center the nav */
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ffd9b3;
+            color: #333;
+            border-radius: 8px;
+        }
+
+        main {
+            padding: 40px 0;
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem; /* Increased font size for better visibility */
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+    
+
+.latnivalok {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.latnivalok-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.latnivalo {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.latnivalo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.latnivalo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive stílus mobil eszközökre és kisebb képernyőkre */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .latnivalok-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    .latnivalok-grid {
+        grid-template-columns: 1fr; /* Egy oszlopos rács */
+        padding: 0 10px;
+    }
+}
+
+footer {
+    background: #4b3d29; /* Sötét barna */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+        </style>
+    </body>
+    </html>

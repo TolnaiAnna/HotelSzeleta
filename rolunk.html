@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rólunk - Hotel Weboldal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Hotel Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="rolunk.html">Rólunk</a></li>
+                    <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+                    <li><a href="latnivalok.html">Látnivalók</a></li>
+                    <li><a href="galeria.html">Galéria</a></li>
+                    <li><a href="arak.html">Árak</a></li>
+                    <li><a href="ajanlat.html">Ajánlat/Foglalás</a></li>
+                    <li><a href="eljutas.html">Eljutás</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hotel">
+            <h2>Hotelünk a Bükki Nemzeti Park területén, Lillafüred közelében, Miskolc-Alsóhámorban található.</h2>
+            <div class="hotel-grid">
+                <div class="hoteltag">
+                    <img src="hotel1.jpg" alt="Hotel Tag 1">
+                    <p>A szálloda két épületből és egy különálló recepcióból áll. Az épületek klasszikus stílusban épültek, de modern komforttal vannak felszerelve, hogy minden igényt kielégítsenek.</p>
+                </div>
+                <div class="hoteltag">
+                    <img src="hotel2.jpg" alt="Hotel Tag 2">
+                    <p>Ideális hely a természetet kedvelőknek, mivel a közelben számos kirándulóhely és turistaútvonal található, beleértve vízeséseket és barlangokat is.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="szalloda-lakosztaly">
+            <h2>A szálloda 3 lakosztállyal, valamint 22 kétágyas szobával rendelkezik</h2>
+            <div class="lakosztaly-grid">
+                <div class="lakosztaly">
+                    <img src="hotelbelso1.jpg" alt="Lakosztály 1">
+                    <p>Luxuslakosztályaink tágasak és elegánsak, minden kényelmet biztosítanak egy felejthetetlen pihenéshez. Külön nappalival és hálószobával rendelkeznek.</p>
+                </div>
+                <div class="lakosztaly">
+                    <img src="hotelbelso2.jpg" alt="Lakosztály 2">
+                    <p>A kétágyas szobák kényelmesek és ízlésesen berendezettek. Minden szobához saját fürdőszoba és előszoba tartozik, ami garantálja a maximális kényelmet.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel. Minden jog fenntartva.</p>
+    </footer>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            text-align: center; /* Centering text for entire page */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #ff6600;
+            color: #fff;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center; /* Center the nav */
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #ffd9b3;
+            color: #333;
+            border-radius: 8px;
+        }
+
+        main {
+            padding: 40px 0;
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem; /* Increased font size for better visibility */
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .hotel-grid, .lakosztaly-grid {
+            display: flex;
+            flex-direction: column; /* Column layout to center elements vertically */
+            align-items: center; /* Center elements horizontally */
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .hoteltag, .lakosztaly {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px;
+            text-align: center; /* Center text within the card */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hoteltag:hover, .lakosztaly:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .hoteltag img, .lakosztaly img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .hoteltag p, .lakosztaly p {
+            color: #555; /* Softer text color */
+            font-size: 1.1rem; /* Slightly larger font for readability */
+            line-height: 1.8; /* Better line spacing */
+        }
+
+        footer {
+            background: #4b3d29;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hotel-grid, .lakosztaly-grid {
+                padding: 0;
+            }
+
+            .hoteltag, .lakosztaly {
+                max-width: 90%; /* Take more width on smaller screens */
+            }
+        }
+    </style>
+</body>
+</html>
